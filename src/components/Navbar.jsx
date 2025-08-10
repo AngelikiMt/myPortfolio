@@ -42,7 +42,6 @@ const NavBar = () => {
                 <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ms-auto">
                     <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
-                    <Nav.Link href="#aboutMe" className={activeLink === 'aboutMe' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('aboutMe')}>About Me</Nav.Link>
                     <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
                     <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
                     <Nav.Link href="#contactMe" className={activeLink === 'contactMe' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('contactMe')}>Contact Me</Nav.Link>
@@ -54,7 +53,7 @@ const NavBar = () => {
                         <a href="#" target="_blank" rel="noopener noreferrer"><IoLogoTableau size={20} color="#fff" /></a>
                     </div>
                     <HashLink to='#connect'>
-                        <button className="vvd" onClick={() => console.log('connect')}>
+                        <button onClick={() => console.log('connect')}>
                             <span>Email Me <img src={gmail} class="gMail"/></span>
                         </button>
                     </HashLink>

@@ -1,0 +1,19 @@
+.skills {
+    text-align: left;
+}
+
+.skills h2 {
+    font-size: 2.5rem;
+    margin: 20px 0;
+    color: #f9f9f9;
+    font-weight: 700;
+    padding: 50px 0;
+}
+
+.skills p {
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;    
+    color: #f9f9f9;
+    max-width: 100%;
+}

@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react';
 import { Container, Row, Col } from "react-bootstrap";
 import { BsArrowRightCircle } from "react-icons/bs";
 import myPhoto from '../assets/myPhoto.png';
@@ -12,8 +11,8 @@ const Banner = () => {
                 <Row className="alig-items-center">
                     <Col xs={12} md={6} xl={5}>
                     <span className="tagline">Welcome to my portfolio</span>
-                    <h1>Hi I am Angeliki <br/> Software Developer</h1>
-                    <p>I am currently pursuing an MSc in Enterprice Software Systems Development. My professional journey has taken me to a Web Development internship, freelance Web Development work and a wide range of personal projects and online courses that supported build my strong programming fundamentals.<br/><br/>I specialize in both frontend and backend development transforming ideas into functional responsive degital experiences using clean code and modern technologies.</p>
+                    <h1>Hi, I am Angeliki <br/> Software Developer</h1>
+                    <p>I am currently pursuing an MSc in Enterprice Software Systems Development. My professional journey has taken me to a Web Development internship, freelance Web Development work and a wide range of personal projects and online courses that supported built my strong programming fundamentals.<br/><br/>I specialize in both frontend and backend development transforming ideas into functional responsive digital experiences using clean code and modern technologies.</p>
                     <button onClick={() => console.log('connect')}>Let's Connect <BsArrowRightCircle size={30}></BsArrowRightCircle></button>
                     </Col>
                     <Col xs={12} md={6} xl={5}> 

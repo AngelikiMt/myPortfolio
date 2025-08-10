@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import myPhoto from '../assets/myPhoto.png';
+import gmail from '../assets/gmail.png';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -35,7 +35,6 @@ const NavBar = () => {
         <Navbar expand="md" className={scrolled ? "scrolled": ""}>
             <Container>
                 <Navbar.Brand href="#home">
-                    <img src={myPhoto} alt="Photo of me" className="mini-me" />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" >
                     <span className="navbar-toggler-icon"></span>
@@ -56,7 +55,7 @@ const NavBar = () => {
                     </div>
                     <HashLink to='#connect'>
                         <button className="vvd" onClick={() => console.log('connect')}>
-                            <span>Let's Connect</span>
+                            <span>Email Me <img src={gmail} class="gMail"/></span>
                         </button>
                     </HashLink>
                 </span>

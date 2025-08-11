@@ -31,7 +31,14 @@
     width: 100%;
 }
 
+.cv-button {
+    text-decoration: none;
+    cursor: pointer;
+}
+
 .banner button {
+    text-decoration: none;
+    cursor: pointer;
     color: #333;
     padding: 5px 5px;
     font-weight: 700;

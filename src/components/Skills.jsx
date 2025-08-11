@@ -54,7 +54,7 @@ const Skills = () => {
                                 </ul>
                             </div>
                             <div className="skills-category">
-                                <h3>APIs & Data Formats</h3>
+                                <h3>APIs <br/> Data Formats</h3>
                                 <ul>
                                     <li><CiCloudOn color="#fff" size={30} /> RESTful API</li>
                                     <li><IoKey  color="#fff" size={30} /> JWT Authentication</li>

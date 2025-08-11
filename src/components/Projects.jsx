@@ -26,17 +26,16 @@ const Projects = () => {
     const projects = [
         {
             title: 'Monsters VS Knights',
-            description: 'this is the first project',
+            description: 'A turn-based console game developed in native Java. It simulates a dynamic battle between the Knights and the Monsters, on an interactive map. The user-player controls a unique Avatar to observe the flow of the battle.',
             imgUrl: guiBased,
         },
           {
             title: 'Events App',
-            description: 'Another cool project.',
+            description: 'A MERN full-stack web application, built to help users discover, browse, create, and manage events across various cities in Greece.',
             imgUrl: eventsApp,
         },
 
     ];
-
 
     return (
         <section className="projects" id="projects">
@@ -44,7 +43,7 @@ const Projects = () => {
                 <Row>
                     <Col size={12}>
                         <h2>Projects</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ab vitae sequi eveniet omnis? Suscipit incidunt iure fuga natus nostrum aliquid? Inventore ullam voluptates veniam placeat ea facilis modi voluptatibus?</p>
+                        <p>These projects are the milestones in my growth into developing. From immersive games like Monsters VS Knights to practical applications like the Event App, each project reflects my excitement for solving real-world problems through clean design and thoughtful code. I aim to fully responsive User Interfaces while I approach every challenge with curiosity and a drive to learn.</p>
                         <Carousel responsive={responsive} infinite={true}>
                             {projects.map((project, index) => (
                                 <div className="carousel-item-wrapper" key={index}>

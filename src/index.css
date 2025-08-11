@@ -27,11 +27,3 @@ p, a, li, button, ul {
   line-height: normal;
   text-decoration: none;
 }
-
-p.success {
-  color: green;
-}
-
-p.danger {
-  color: red;
-}

@@ -22,6 +22,7 @@
 .carousel-item-wrapper {
   display: flex;
   justify-content: center;
+  margin: 20px 0;
 }
 
 .proj-imgbx {
@@ -34,12 +35,11 @@
     width: 600px;
     height: 550px;
     margin: 0 10px;
-
 }
 
 .proj-imgbx img {
     width: 100%;
-    height: 70%;
+    height: 60%;
     margin: 0;
     padding: 0;    
     display: block;

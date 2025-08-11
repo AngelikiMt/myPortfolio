@@ -44,17 +44,18 @@ const NavBar = () => {
                     <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
                     <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
                     <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
-                    <Nav.Link href="#contactMe" className={activeLink === 'contactMe' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('contactMe')}>Contact Me</Nav.Link>
                 </Nav>
                 <span className="navbar-text">
                     <div className="social-icon">
-                        <a href="#" target="_blank" rel="noopener noreferrer"><SlSocialLinkedin size={20} color="#fff" /></a>
-                        <a href="#" target="_blank" rel="noopener noreferrer"><FaGithub size={20} color="#fff" /></a>
-                        <a href="#" target="_blank" rel="noopener noreferrer"><IoLogoTableau size={20} color="#fff" /></a>
+                        <a href="https://www.linkedin.com/in/angeliki-matta/" target="_blank" rel="noopener noreferrer"><SlSocialLinkedin size={20} color="#fff" /></a>
+                        <a href="https://github.com/AngelikiMt" target="_blank" rel="noopener noreferrer"><FaGithub size={20} color="#fff" /></a>
+                        <a href="https://public.tableau.com/app/profile/angeliki.matta/viz/_17436726139030/Story1" target="_blank" rel="noopener noreferrer"><IoLogoTableau size={20} color="#fff" /></a>
                     </div>
-                    <HashLink to='#connect'>
+                    <HashLink to='#contact'>
                         <button onClick={() => console.log('connect')}>
-                            <span>Email Me <img src={gmail} class="gMail"/></span>
+                            <span>
+                                Contact Me <img src={gmail} className="gMail"/>    
+                            </span>
                         </button>
                     </HashLink>
                 </span>

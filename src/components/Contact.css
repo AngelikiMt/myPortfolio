@@ -52,7 +52,7 @@ textarea:focus {
   background-color: #fff;
 }
 
-.contact-btn {
+.contact button {
   background-color: #ee8ad0;
   color: #fff;
   padding: 14px 28px;
@@ -63,7 +63,7 @@ textarea:focus {
   transition: background-color 0.3s ease;
 }
 
-.contact-btn:hover {
+.contact button:hover {
   background-color: #ee5bc2;
 }
 

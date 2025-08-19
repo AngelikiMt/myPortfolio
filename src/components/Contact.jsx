@@ -28,7 +28,7 @@ const Contact = () => {
                 body: JSON.stringify(formData)
             });
 
-            const result = await respomse.json();
+            const result = await response.json();
             if (result.code === 200) {
                 setStatus('Message sent successfully!');
                 setFormData({ name: '', email: '', subject: '', message: '' });
@@ -53,7 +53,7 @@ const Contact = () => {
                                     <input type="email" class="form-group" name="email" placeholder="Email" value={formData.email} onChange={handleChange} required />
                                     <input type="text" class="form-group" name="subject" placeholder="Subject" value={formData.subject} onChange={handleChange} required />
                                     <textarea class="form-group" name="message" placeholder="Message" rows="6" value={formData.message} onChange={handleChange} required ></textarea>
-                                    <button class="contact-btn" type="submit" className="send-btn">Send Message</button>
+                                    <button type="submit" className="send-btn">Send Message</button>
                                     {status && <p className="status">{status}</p>}
                                 </form>
                             </div>
@@ -61,9 +61,8 @@ const Contact = () => {
                     </TrackVisibility>
                 </Row>
             </Container>
-         </section>
-
-        );
+        </section>
+    );
 }
 
 export default Contact;

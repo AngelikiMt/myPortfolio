@@ -1,8 +1,10 @@
-import '../components/Projects.css';
+import "../components/Projects.css";
 import "react-multi-carousel/lib/styles.css";
-import '../components/ProjectCart'
-import guiBased from "../assets/GUI-based.png"
-import eventsApp from "../assets/events-app.png"
+import "../components/ProjectCart";
+import guiBased from "../assets/GUI-based.png";
+import eventsApp from "../assets/events-app.png";
+import retailHub from "../assets/retailHub.png";
+import tripsTracking from "../assets/tripsTracking.png";
 import { Container, Row, Col } from 'react-bootstrap';
 import Carousel from "react-multi-carousel";
 import ProjectCart from '../components/ProjectCart';
@@ -26,15 +28,24 @@ const Projects = () => {
     const projects = [
         {
             title: 'Monsters VS Knights',
-            description: 'A turn-based console game developed in native Java. It simulates a dynamic battle between the Knights and the Monsters, on an interactive map. The user-player controls a unique Avatar to observe the flow of the battle.',
+            description: 'A turn-based console game that simulates a dynamic battle between the Knights and the Monsters, on an interactive map. The user-player controls a unique Avatar to observe the flow of the battle. Built with native java.',
             imgUrl: guiBased,
         },
-          {
+        {
             title: 'Events App',
-            description: 'A MERN full-stack web application, built to help users discover, browse, create, and manage events across various cities in Greece.',
+            description: 'A MERN full-stack web application, built to help users discover, browse, create, and manage events across various cities in Greece. Built with Node.js, Express.js, MongoDB and React-Vite.',
             imgUrl: eventsApp,
         },
-
+        {
+            title: 'RetailHub Capstone Project',
+            description: 'A full-stack information system developed for complete restructuring of business operations (CRUD) and enhancing the management of customers, products, inventory and transactions. Built with native Java, GUI-Swing UI, SQL database, maven and JDBC API.',
+            imgUrl: retailHub,
+        },
+        {
+            title: 'Trips Tracking App',
+            description: 'A Flask-based web application designed to help travelers plan and manage their trips more effectively, while also enabling travel agents to enhance their services through a certalized trips managements system. Built with Flask, HTML and Bootstrap.',
+            imgUrl: tripsTracking,
+        },
     ];
 
     return (

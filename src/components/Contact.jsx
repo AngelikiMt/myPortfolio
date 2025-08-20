@@ -1,14 +1,16 @@
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import '../components/Contact.css';
 import { useState } from "react";
 import TrackVisibility from 'react-on-screen';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
     const [formData, setFormData] = useState({
         name: '',
         email: '',
         subject: '',
-        message: ''
+        message: '',
+        timestamp: ''
     });
 
     const [status, setStatus] = useState('');
@@ -21,22 +23,23 @@ const Contact = () => {
         e.preventDefault();
         setStatus('Sending...');
 
-        try {
-            const response = await fetch("http://localhost:5173/contact", {
-                method: 'POST',
-                headers: { ' Content-Type': 'application/json' },
-                body: JSON.stringify(formData)
-            });
+        const now = new Date().toLocaleString();
+        const dataToSend = { ...formData, timestamp: now };
 
-            const result = await response.json();
-            if (result.code === 200) {
-                setStatus('Message sent successfully!');
-                setFormData({ name: '', email: '', subject: '', message: '' });
-            } else {
-                setStatus('Something went wrong. Try again later.');
-            }
+        const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+        const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+        const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+        try {
+            await emailjs.send(serviceID, templateId, dataToSend, publicKey);
+
+            setStatus('Message sent successfully!');
+            setTimeout(() => {
+                setFormData({ name: '', email: '', subject: '', message: '', timestamp: ''});
+                setStatus('');
+            }, 4000);
         } catch (error) {
-            setStatus('Error sending message.');
+            console.log('EmailJS error: ', error);
+            setStatus('Error sending message. Please, try again later');
         }
     };
 
@@ -49,12 +52,12 @@ const Contact = () => {
                             <div className={`contact-box ${isVisible ? "show" : ""}`}>
                                 <h2 className="contact-title">CONTACT ME</h2>
                                 <form onSubmit={handleSubmit}>
-                                    <input type="text" class="form-group" name="name" placeholder="Name" value={formData.name} onChange={handleChange} required />
-                                    <input type="email" class="form-group" name="email" placeholder="Email" value={formData.email} onChange={handleChange} required />
-                                    <input type="text" class="form-group" name="subject" placeholder="Subject" value={formData.subject} onChange={handleChange} required />
-                                    <textarea class="form-group" name="message" placeholder="Message" rows="6" value={formData.message} onChange={handleChange} required ></textarea>
+                                    <input type="text" className="form-group" name="name" placeholder="Name" value={formData.name} onChange={handleChange} required />
+                                    <input type="email" className="form-group" name="email" placeholder="Email" value={formData.email} onChange={handleChange} required />
+                                    <input type="text" className="form-group" name="subject" placeholder="Subject" value={formData.subject} onChange={handleChange} required />
+                                    <textarea className="form-group" name="message" placeholder="Message" rows="6" value={formData.message} onChange={handleChange} required ></textarea>
                                     <button type="submit" className="send-btn">Send Message</button>
-                                    {status && <p className="status">{status}</p>}
+                                    {status && <p className="status-message">{status}</p>}
                                 </form>
                             </div>
                         )}

@@ -67,3 +67,13 @@ textarea:focus {
   background-color: #ee5bc2;
 }
 
+.status-message {
+  margin-top: 1rem;
+  font-weight: 600;
+  color: #28a745; /* green for success */
+  transition: opacity 0.3s ease-in-out;
+}
+
+.status-message:contains("Error") {
+  color: #dc3545; /* red for error */
+}

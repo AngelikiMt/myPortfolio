@@ -30,21 +30,25 @@ const Projects = () => {
             title: 'RetailHub Capstone Project',
             description: 'A full-stack information system developed for complete restructuring of business operations (CRUD) and enhancing the management of customers, products, inventory and transactions. Built with native Java, GUI-Swing UI, SQL database, maven and JDBC API.',
             imgUrl: retailHub,
+            gitHubUrl: 'https://github.com/AngelikiMt/RetailHub_Project/tree/fullstack_version'
         },
         {
             title: 'Trips Tracking App',
             description: 'A Flask-based web application designed to help travelers plan and manage their trips more effectively, while also enabling travel agents to enhance their services through a certalized trips managements system. Built with Flask, HTML and Bootstrap.',
             imgUrl: tripsTracking,
+            gitHubUrl: 'https://github.com/AngelikiMt/TripsTracking'
         },
         {
             title: 'Events App',
             description: 'A MERN full-stack web application, built to help users discover, browse, create, and manage events across various cities in Greece. Built with Node.js, Express.js, MongoDB and React-Vite.',
             imgUrl: eventsApp,
+            gitHubUrl: 'https://github.com/AngelikiMt/events-app'
         },
         {
             title: 'Monsters VS Knights',
             description: 'A turn-based console game that simulates a dynamic battle between the Knights and the Monsters, on an interactive map. The user-player controls a unique Avatar to observe the flow of the battle. Built with native java.',
             imgUrl: guiBased,
+            gitHubUrl: 'https://github.com/AngelikiMt/MonstersVSKnights'
         },
     ];
 

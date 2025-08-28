@@ -77,3 +77,35 @@ textarea:focus {
 .status-message:contains("Error") {
   color: #dc3545; /* red for error */
 }
+
+@media (max-width: 768px) {
+  .contact-box {padding: 30px 20px;}
+  .contact-title {font-size: 2rem;}
+
+  input,
+  textarea {
+    font-size: 0.95rem;
+    padding: 10px 14px;
+  }
+
+  .contact button {
+    font-size: 0.95rem;
+    padding: 12px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-title {font-size: 1.75rem;}
+  .contact-box {padding: 20px 15px;}
+
+  input,
+  textarea {
+    font-size: 0.9rem;
+    padding: 10px 12px;
+  }
+
+  .contact button {
+    font-size: 0.9rem;
+    padding: 10px 16px;
+  }
+}

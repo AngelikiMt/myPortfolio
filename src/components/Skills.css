@@ -59,8 +59,11 @@
   .skills p {font-size: 0.9rem;}
 
   .skills-icons-txt {
-   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 0.5rem;
   }
+
+  .skills-category h3{font-size:1rem;}
+  .skills-category ul li{font-size:0.8rem;}
 }
 

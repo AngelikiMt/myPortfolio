@@ -1,31 +1,31 @@
 .banner {
     margin-top: 0;
-    padding: 260px 0 100px 0;
+    padding: 16rem 0 6rem 0;
 }
 
 .tagline {
     font-weight: 700;
     letter-spacing: 0.8px;
-    padding: 8px 10px;
+    padding: 0.5rem 0.6rem;
     border: 2px solid rgba(255, 255, 255, 0.5);
-    font-size: 20px;
-    margin-bottom: 20px;
+    font-size: 1.25rem;
+    margin-bottom: 1.25rem;
     display: inline-block;
 }
 
 .banner h1 {
-    font-size: 55px;
+    font-size: 3.4rem;
     font-weight: 700;
     letter-spacing: 0.8px;
     line-height: 1;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     display: block;
     width: max-content;
 }
 
 .banner p {
     color: #c5c1c1;
-    font-size: 18px;
+    font-size: 1.25rem;
     letter-spacing: 0.8px;
     line-height: 1.5em;
     width: 100%;
@@ -40,30 +40,26 @@
     text-decoration: none;
     cursor: pointer;
     color: #333;
-    padding: 5px 5px;
+    padding: 0.3rem 0.3rem;
     font-weight: 700;
-    font-size: 20px;
-    margin-top: 60px;
+    font-size: 1.25rem;
+    margin-top: 3.75rem;
     letter-spacing: 0.8px;
     display: flex;
     align-items: center;
     animation: updown 4s linear infinite;
 }
 
-.banner button:hover {
-    font-size: 30px;
-}
+.banner button:hover {font-size: 1.8rem;}
 
 .banner button svg {
-    font-size: 25px;
-    margin-left: 10px;
+    font-size: 1.5rem;
+    margin-left: 0.6rem;
     transition: 0.3s ease-in-out;
     line-height: 1;
 }
 
-.banner button:hover svg {
-    margin-left: 2vw;
-}
+.banner button:hover svg {margin-left: 2vw;}
 
 .align-items-center img {
     filter: grayscale(100%);
@@ -77,13 +73,29 @@
 }
 
 @keyframes updown {
-    0% {
-        transform: translateY(-20px);
+    0% {transform: translateY(-20px);}
+    50% {transform: translateY(20px);}
+    100% {transform: translateY(-20px);}
+}
+
+@media (max-width: 768px) {
+    .banner h1 {
+        font-size: 2rem;
+        width: 100%;
     }
-    50% {
-        transform: translateY(20px);
+
+    .banner p {font-size: 0.9rem;}
+
+    .tagline {
+        font-size: 1rem;
+        padding: 0.4rem 0.6rem;
     }
-    100% {
-        transform: translateY(-20px);
+
+    .banner button {font-size: 1rem;}
+
+    .align-items-center img {
+        margin: 1rem 0;
+        width: 65%;
     }
 }
+

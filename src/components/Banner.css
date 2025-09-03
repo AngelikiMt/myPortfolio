@@ -65,6 +65,7 @@
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
     margin-left: 10vw;
+    width: 100%;
 }
 
 .align-items-center img:hover {

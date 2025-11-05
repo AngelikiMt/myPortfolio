@@ -1,23 +1,25 @@
+import { Container, Row, Col } from 'react-bootstrap';
+import Carousel from "react-multi-carousel";
+
 import "../components/Projects.css";
 import "react-multi-carousel/lib/styles.css";
 import "../components/ProjectCart";
 import guiBased from "../assets/GUI-based.png";
 import eventsApp from "../assets/events-app.png";
 import retailHub from "../assets/retailHub.png";
+import qm from "../assets/qm.png";
 import tripsTracking from "../assets/tripsTracking.png";
-import { Container, Row, Col } from 'react-bootstrap';
-import Carousel from "react-multi-carousel";
 import ProjectCart from '../components/ProjectCart';
 
 const Projects = () => {
     const responsive = {
         superLargeDesktop: {
             breakpoint: {max: 4000, min: 3000},
-            items: 5
+            items: 4
         },
         desktop: {
             breakpoint: {max: 3000, min: 1024},
-            items: 3
+            items: 2
         },
         tablet: {
             breakpoint: {max: 1024, min: 464},
@@ -30,6 +32,12 @@ const Projects = () => {
     };
 
     const projects = [
+        {
+            title: 'Quality Remodeling Website',
+            description: "A full-stack website, designed for informing users about company's projects and other information. Built with node.js, Express.js, React and bootstrap",
+            imgUrl: qm,
+            gitHubUrl: 'https://newqm.onrender.com/'
+        },
         {
             title: 'RetailHub Capstone Project',
             description: 'A full-stack information system developed for complete restructuring of business operations (CRUD) and enhancing the management of customers, products, inventory and transactions. Built with native Java, GUI-Swing UI, SQL database, maven and JDBC API.',

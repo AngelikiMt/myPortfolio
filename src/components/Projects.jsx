@@ -1,15 +1,17 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import Carousel from "react-multi-carousel";
 
-import "../components/Projects.css";
-import "react-multi-carousel/lib/styles.css";
-import "../components/ProjectCart";
 import guiBased from "../assets/GUI-based.png";
 import eventsApp from "../assets/events-app.png";
 import retailHub from "../assets/retailHub.png";
 import qm from "../assets/qm.png";
 import tripsTracking from "../assets/tripsTracking.png";
 import ProjectCart from '../components/ProjectCart';
+
+import "../components/Projects.css";
+import "react-multi-carousel/lib/styles.css";
+import "../components/ProjectCart";
+
 
 const Projects = () => {
     const responsive = {

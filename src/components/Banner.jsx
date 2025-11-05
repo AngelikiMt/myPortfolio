@@ -1,7 +1,9 @@
 import { Container, Row, Col } from "react-bootstrap";
+import { FiDownload } from "react-icons/fi";
+
 import myPhoto from '../assets/myPhoto.png';
 import '../components/Banner.css';
-import { FiDownload } from "react-icons/fi";
+
 
 const Banner = () => {
 

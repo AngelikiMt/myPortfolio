@@ -1,13 +1,17 @@
 import { useState, useEffect } from 'react';
-import gmail from '../assets/gmail.png';
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
 import { HashLink } from 'react-router-hash-link';
-import '../components/NavBar.css';
 import { SlSocialLinkedin } from "react-icons/sl";
 import { FaGithub } from "react-icons/fa6";
 import { IoLogoTableau } from "react-icons/io5";
+
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+
+import gmail from '../assets/gmail.png';
+
+import '../components/Navbar.css';
+
 
 const NavBar = () => {
     const [activeLink, setActiveLink] = useState('home');

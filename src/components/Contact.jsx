@@ -1,8 +1,10 @@
 import { Container, Row } from "react-bootstrap";
-import '../components/Contact.css';
 import { useState } from "react";
 import TrackVisibility from 'react-on-screen';
 import emailjs from '@emailjs/browser';
+
+import '../components/Contact.css';
+
 
 const Contact = () => {
     const [formData, setFormData] = useState({

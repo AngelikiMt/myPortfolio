@@ -1,4 +1,3 @@
-import '../components/Skills.css';
 import { Container, Row, Col } from 'react-bootstrap';
 import { FaReact, FaNodeJs, FaGitAlt, FaJava, FaPython, FaHtml5, FaCss3Alt, FaBootstrap } from 'react-icons/fa';
 import { SiDjango, SiFlask, SiExpress, SiMongodb, SiTableau, SiGithub, SiJavascript, SiMysql, SiPostman } from 'react-icons/si';
@@ -8,6 +7,9 @@ import { LuFileJson } from "react-icons/lu";
 import { IoKey } from "react-icons/io5";
 import { CiCloudOn } from "react-icons/ci";
 import { FiTriangle } from "react-icons/fi";
+
+import '../components/Skills.css';
+
 
 const Skills = () => {
     return (

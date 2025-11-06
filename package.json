@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://AngelikiMt.github.io/myPortfolio",
+  "homepage": "https://my-portfolio-q1t4xufw9-angies-projects-b59addfe.vercel.app/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

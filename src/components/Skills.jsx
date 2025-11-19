@@ -19,7 +19,13 @@ const Skills = () => {
                     <Col>
                         <div className="skills-bx">
                             <h2>Skills</h2>
-                            <p>With hands-on experience in both front-end and back-end development, I bring an adaptive and well-rounded skill set to every project I undertake. My proficiency with modern web technologies and development tools enables me to write clean, maintainable code and promote efficient collaboration across teams. With solid foundation in working with APIs, I seamlessly integrate dynamic content and optimize performance to ensure smooth functionality across all devices. Whether building responsive interfaces or architecting robust server-side logic, I approach each challenge with precision, creativity and excitement for problem-solving.</p>
+                            <p>With hands-on experience in both front-end and back-end development, 
+                                I bring an adaptive and well-rounded skill set to every project I undertake. 
+                                My proficiency with modern web technologies, paired with solid experience in SQL databases (MySQL, PostgreSQL) and data visualization tools 
+                                such as Tableau, enables me to build complete, data-powered applications. <br/><br/>
+                                I work confidently with APIs, integrate dynamic content, and optimize performance to ensure smooth functionality across all devices. 
+                                Whether designing responsive interfaces, architecting server-side logic, or analyzing data to create meaningful visual dashboards, 
+                                I approach each challenge with precision, creativity, and excitement for problem-solving.</p>
                         </div>
                         <div className="skills-icons-txt">
                             <div className="skills-category">

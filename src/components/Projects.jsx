@@ -4,6 +4,7 @@ import Carousel from "react-multi-carousel";
 import guiBased from "../assets/GUI-based.png";
 import eventsApp from "../assets/events-app.png";
 import retailHub from "../assets/retailHub.png";
+import tableau from "../assets/tableau.png";
 import qm from "../assets/qm.png";
 import tripsTracking from "../assets/tripsTracking.png";
 import ProjectCart from '../components/ProjectCart';
@@ -64,6 +65,12 @@ const Projects = () => {
             imgUrl: guiBased,
             gitHubUrl: 'https://github.com/AngelikiMt/MonstersVSKnights'
         },
+        {
+            title: 'Tableau Visualization',
+            description: 'This Tableau project analyzes a wine production of 50,000 wines, across countries, regions, and years. I developed 10 different visualizations, including a story bubble chart showing the number of wines per province and country and a choropleth map illustrating the average wine price by country.',
+            imgUrl: tableau,
+            gitHubUrl: 'https://public.tableau.com/app/profile/angeliki.matta/vizzes'
+        }
     ];
 
     return (

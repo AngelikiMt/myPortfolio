@@ -79,7 +79,10 @@ const Projects = () => {
                 <Row>
                     <Col size={12}>
                         <h2>Projects</h2>
-                        <p>These projects are the milestones in my growth into developing. From immersive games like Monsters VS Knights to practical applications like the Event App, each project reflects my excitement for solving real-world problems through clean design and thoughtful code. I aim to fully responsive User Interfaces while I approach every challenge with curiosity and a drive to learn.</p>
+                        <p>These projects are the milestones in my growth into developing. From immersive games like Monsters VS Knights to practical applications like the 
+                            Event App, each project reflects my excitement for solving real-world problems through clean design and thoughtful code. <br/><br/>
+                            Beyond web-focused projects, I’ve also applied SQL querying, database management, and data visualization techniques in analytical projects, creating dashboards and insights that support clear, data-driven decisions. 
+                            Whether I’m building a fully responsive UI or visualizing complex datasets, I approach every challenge with curiosity and a drive to learn.</p>
                         <Carousel responsive={responsive} infinite={true}>
                             {projects.map((project, index) => (
                                 <div className="carousel-item-wrapper" key={index}>

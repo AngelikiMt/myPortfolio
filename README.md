@@ -23,12 +23,12 @@ In addition to software development, I have hands-on experience with **SQL**, **
 
 This portfolio highlights a variety of projects—from games and interactive applications to full-stack solutions and analytical dashboards. Each project showcases my enthusiasm for problem-solving, clean design, and continuous learning.
 
-🔗 **Website:** [[[https://newqm.onrender.com/](https://newqm.onrender.com/)]]
-**RetailHub Capstone Project**
-**Trips Tracking App**
-**Events App**
-**Monsters VS Knights**
-**Tableau Wine Visualization**
+* 🔗 **Website:** [[[https://newqm.onrender.com/](https://newqm.onrender.com/)]]
+* **RetailHub Capstone Project**
+* **Trips Tracking App**
+* **Events App**
+* **Monsters VS Knights**
+* **Tableau Wine Visualization**
 
 ## 🎯 What I Focus On
 

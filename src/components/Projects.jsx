@@ -36,7 +36,7 @@ const Projects = () => {
     const projects = [
         {
             title: 'Quality Remodeling Website',
-            description: "A full-stack website, designed for informing users about company's projects and other information. Built with node.js, Express.js, React and bootstrap",
+            description: "A full-stack website, designed for informing users about company's projects and other information. Built with Node.js, Express.js, React and bootstrap",
             imgUrl: qm,
             gitHubUrl: 'https://newqm.onrender.com/'
         },
